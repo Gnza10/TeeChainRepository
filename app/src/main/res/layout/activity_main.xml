@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <!-- IP -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutIp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="IP del nodo"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/inputLayoutPort"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextIp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Puerto -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutPort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Puerto"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutIp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonConnect"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón Conectar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Conectar"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutPort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Grupo para control de visibilidad -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupConnectionForm"
+        android:visibility="visible"
+        app:constraint_referenced_ids="inputLayoutIp,inputLayoutPort,buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <!-- Texto de estado -->
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Conectado a nodo X"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Logs -->
+    <ScrollView
+        android:id="@+id/scrollLogs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textViewStatus"
+        app:layout_constraintBottom_toTopOf="@id/buttonDisconnect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/textViewLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#222"
+            android:padding="16dp"
+            android:background="#ECECEC"
+            android:textIsSelectable="true" />
+    </ScrollView>
+
+    <!-- Botón Desconectar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDisconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desconectar"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
