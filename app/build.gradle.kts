@@ -45,7 +45,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(libs.web3j)
     implementation(libs.biometric)
-
+    implementation(libs.kbls)
+    implementation(libs.okhttp)
+    implementation(libs.json)
+    implementation(libs.androidx.lifecycle.process)
 }

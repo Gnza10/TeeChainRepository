@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "TeeChainv2"
 include(":app")
- 

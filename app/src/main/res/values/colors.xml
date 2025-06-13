@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#2F2D2D</color>
+    <color name="android_green">#4CAF50</color>
+    <color name="crystal_blue">#3491E7</color>
+    <color name="steel_gray">#4F5B66</color>
+    <color name="background_light">#F9F9F9</color>
+    <color name="error_red">#E22A2A</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#666666</color>
+    <color name="log_background">#EEEEEE</color>
+    <color name="charcoal_black">#121212</color>
+    <color name="light_gray">#B0B0B0</color>
+    <color name="stroke_color">#000000</color> <!-- Black for light theme -->
+    <color name="textColor">#000000</color>
+    <color name="background_color">#FFFFFF</color>
+
+
 </resources>

@@ -1,0 +1,61 @@
+<resources>
+    <!-- Autenticación -->
+    <string name="login_phrase">Bienvenido a TeeChain, se requiere autenticación</string>
+    <string name="login_subphrase">Usa tu Face ID, huella o PIN</string>
+    <string name="loginSucces">Inicio de sesión correcto</string>
+    <string name="loginFailed">Inicio de sesión fallido</string>
+    <string name="loginError">Error al iniciar sesión</string>
+
+    <!-- Validación de IP/puerto -->
+    <string name="empty_ip_port_error">La IP y el puerto no pueden estar vacíos</string>
+    <string name="invalid_ip_format">Formato de IP no válido</string>
+    <string name="invalid_port">Número de puerto no válido</string>
+
+    <!-- Logs de conexión y validación -->
+    <string name="log_checking_connection">🔍 Comprobando la conexión con el nodo…</string>
+    <string name="log_connection_success">Conectado a %1$s:%2$s</string>
+    <string name="connection_failed">❌ No se ha podido conectar con el nodo. Comprueba la IP y el puerto.</string>
+    <string name="connection_success_status">Conectado al nodo: %1$s:%2$s</string>
+
+    <!-- Generación de claves -->
+    <string name="bls_key_created">🔐 Clave BLS generada y guardada.</string>
+
+    <!-- Conexión al nodo y bloque firmado -->
+    <string name="log_conexion_registrada">📡 Conexión registrada con %1$s:%2$s a las %3$s</string>
+    <string name="log_connection_attempt">🔌 Intentando conectar con %1$s:%2$s</string>
+    <string name="log_reconnection_delay">🔁 Fallo temporal. Reintentando en %1$d segundos…</string>
+    <string name="log_thread_interrupted">🛑 Hilo interrumpido, deteniendo el gestor.</string>
+    <string name="log_temporary_network_exception">Fallo de red temporal: %1$s</string>
+    <string name="log_attempting_reconnect">Fallo temporal. Intentando reconectar…</string>
+    <string name="log_exception">❌ Excepción: %1$s</string>
+    <string name="log_no_private_key">❌ No se ha podido cargar la clave privada.</string>
+    <string name="log_firmando_bloque">✍️ Firmando bloque en el slot %1$s…</string>
+    <string name="log_firma_bloque_fallida">❌ Error al firmar el bloque en el slot %1$s: %2$s</string>
+    <string name="log_signed_block_skipped">⚠️ El TTL del bloque firmado ha expirado. No se enviará.</string>
+    <string name="log_integrity_failed">❌ Fallo de integridad. El bloque ha sido manipulado.</string>
+    <string name="log_block_signed">✅ Bloque en el slot %1$s firmado y enviado correctamente.</string>
+    <string name="log_block_send_error">⚠️ Error al enviar el bloque: %1$d - %2$s</string>
+    <string name="log_block_post_exception">Excepción al transmitir el bloque (intento %1$d): %2$s</string>
+    <string name="log_retrying_block_post">Reintentando la transmisión del bloque (intento %1$d)…</string>
+    <string name="log_max_retries_failed">No se ha podido enviar el bloque tras %1$d intentos. Cancelando.</string>
+    <string name="log_desconexion_registrada">📴 Desconexión registrada a las %1$s</string>
+
+    <!-- Layout -->
+    <string name="app_logo">Logotipo de la app</string>
+    <string name="alert_icon">Icono de alerta</string>
+    <string name="errorBiomMessage">Necesitas configurar PIN, patrón, huella o Face ID para usar esta app</string>
+    <string name="errorBiomDetail">No hemos podido verificar tu identidad con biometría. Intenta de nuevo o revisa la configuración.</string>
+    <string name="retryMessage">Reintentar</string>
+    <string name="openConf">Abrir configuración</string>
+    <string name="DisconnectMess">Desconectar</string>
+    <string name="connection_established">Conexión establecida</string>
+    <string name="NodeIP">IP del nodo</string>
+    <string name="PortMess">Puerto</string>
+    <string name="ConnectMess">Conectar</string>
+    <string name="go_back">Volver</string>
+
+    <!-- Logs -->
+    <string name="no_logs_found">No se han encontrado registros.</string>
+    <string name="log_icon">Icono de log</string>
+    <string name="check_icon">Icono de verificación</string>
+</resources>

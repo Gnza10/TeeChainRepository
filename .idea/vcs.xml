@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bls-eth-go-binary" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bls-eth-go-binary/src/bls" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bls-eth-go-binary/src/bls/mcl" vcs="Git" />
   </component>
 </project>

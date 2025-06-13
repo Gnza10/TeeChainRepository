@@ -1,3 +1,64 @@
 <resources>
-    <string name="app_name">TeeChainv2</string>
+    <!-- Autenticación -->
+    <string name="login_phrase">Welcome to TeeChain, authentication required</string>
+    <string name="login_subphrase">Use your Face ID, footprint, or PIN</string>
+    <string name="loginSucces">Successful login</string>
+    <string name="loginFailed">Failed login</string>
+    <string name="loginError">Error while logging</string>
+
+    <!-- Validación de IP/puerto -->
+    <string name="empty_ip_port_error">IP and port cannot be empty</string>
+    <string name="invalid_ip_format">Invalid IP format</string>
+    <string name="invalid_port">Invalid port number</string>
+
+    <!-- Logs de conexión y validación -->
+    <string name="log_checking_connection">🔍 Checking connection to node…</string>
+    <string name="log_connection_success">Connected successfully to %1$s:%2$s</string>
+    <string name="connection_failed">❌ Could not connect to the node. Please check IP and port.</string>
+    <string name="connection_success_status">Connected to node: %1$s:%2$s</string>
+
+    <!-- Generación de claves -->
+    <string name="bls_key_created">🔐 BLS key generated and stored.</string>
+
+    <!-- Conexión al nodo y bloque firmado -->
+    <string name="log_conexion_registrada">📡 Registro de conexión a %1$s:%2$s a las %3$s</string>
+    <string name="log_connection_attempt">🔌 Connection attempt to %1$s:%2$s</string>
+    <string name="log_reconnection_delay">🔁 Temporary failure. Retrying in %1$d seconds…</string>
+    <string name="log_thread_interrupted">🛑 Thread interrupted, stopping handler.</string>
+    <string name="log_temporary_network_exception">Temporary network failure: %1$s</string>
+    <string name="log_attempting_reconnect">Temporary failure. Attempting to reconnect…</string>
+    <string name="log_exception">❌ Exception: %1$s</string>
+    <string name="log_no_private_key">❌ Failed to load private key.</string>
+    <string name="log_firmando_bloque">✍️ Firmando bloque en slot %1$s…</string>
+    <string name="log_firma_bloque_fallida">❌ Error al firmar bloque en slot %1$s: %2$s</string>
+    <string name="log_signed_block_skipped">⚠️ Signed block TTL expired. Skipping transmission.</string>
+    <string name="log_integrity_failed">❌ Integrity check failed. Block was tampered.</string>
+    <string name="log_block_signed">✅ Block at slot %1$s signed and submitted successfully.</string>
+    <string name="log_block_send_error">⚠️ Error submitting block: %1$d - %2$s</string>
+    <string name="log_block_post_exception">Exception during block transmission (attempt %1$d): %2$s</string>
+    <string name="log_retrying_block_post">Retrying block transmission (attempt %1$d)…</string>
+    <string name="log_max_retries_failed">Failed to transmit block after %1$d attempts. Giving up.</string>
+    <string name="log_desconexion_registrada">📴 Desconexión registrada a las %1$s</string>
+
+    <!-- Layout -->
+    <string name="app_logo">App logo</string>
+    <string name="alert_icon">Alert Icon</string>
+    <string name="errorBiomMessage">You need to configure PIN, pattern, footprint or face ID in order to use this app</string>
+    <string name="errorBiomDetail">We couldn’t verify your identity using biometrics. Please try again or check your settings.</string>
+    <string name="retryMessage">Retry</string>
+    <string name="openConf">Open Configuration</string>
+    <string name="DisconnectMess">Disconnect</string>
+    <string name="connection_established">Connection established</string>
+    <string name="NodeIP">Node IP</string>
+    <string name="PortMess">Port</string>
+    <string name="ConnectMess">Connect</string>
+    <string name="app_name" translatable="false">TeeChain</string>
+    <string name="logs" translatable="false">Logs</string>
+    <string name="go_back">Go back</string>
+
+    <!-- Logs -->
+    <string name="no_logs_found">No logs found.</string>
+    <string name="log_icon">log Icon</string>
+    <string name="check_icon">check Icon</string>
+
 </resources>

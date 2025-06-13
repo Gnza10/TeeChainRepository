@@ -1,0 +1,61 @@
+<resources>
+    <!-- Authentification -->
+    <string name="login_phrase">Bienvenue sur TeeChain, authentification requise</string>
+    <string name="login_subphrase">Utilisez Face ID, empreinte digitale ou code PIN</string>
+    <string name="loginSucces">Connexion réussie</string>
+    <string name="loginFailed">Échec de la connexion</string>
+    <string name="loginError">Erreur lors de la connexion</string>
+
+    <!-- Validation IP/port -->
+    <string name="empty_ip_port_error">L\'adresse IP et le port ne peuvent pas être vides</string>
+    <string name="invalid_ip_format">Format d\'adresse IP invalide</string>
+    <string name="invalid_port">Numéro de port invalide</string>
+
+    <!-- Logs de connexion et de validation -->
+    <string name="log_checking_connection">🔍 Vérification de la connexion au nœud…</string>
+    <string name="log_connection_success">Connexion réussie à %1$s:%2$s</string>
+    <string name="connection_failed">❌ Impossible de se connecter au nœud. Veuillez vérifier l’IP et le port.</string>
+    <string name="connection_success_status">Connecté au nœud : %1$s:%2$s</string>
+
+    <!-- Génération de clé -->
+    <string name="bls_key_created">🔐 Clé BLS générée et enregistrée.</string>
+
+    <!-- Connexion au nœud et bloc signé -->
+    <string name="log_conexion_registrada">📡 Connexion enregistrée à %1$s:%2$s à %3$s</string>
+    <string name="log_connection_attempt">🔌 Tentative de connexion à %1$s:%2$s</string>
+    <string name="log_reconnection_delay">🔁 Échec temporaire. Nouvelle tentative dans %1$d secondes…</string>
+    <string name="log_thread_interrupted">🛑 Thread interrompu, arrêt du gestionnaire.</string>
+    <string name="log_temporary_network_exception">Erreur réseau temporaire : %1$s</string>
+    <string name="log_attempting_reconnect">Erreur temporaire. Nouvelle tentative de connexion…</string>
+    <string name="log_exception">❌ Exception : %1$s</string>
+    <string name="log_no_private_key">❌ Échec du chargement de la clé privée.</string>
+    <string name="log_firmando_bloque">✍️ Signature du bloc au slot %1$s…</string>
+    <string name="log_firma_bloque_fallida">❌ Échec de la signature du bloc au slot %1$s : %2$s</string>
+    <string name="log_signed_block_skipped">⚠️ Durée de validité du bloc expirée. Envoi annulé.</string>
+    <string name="log_integrity_failed">❌ Échec de l’intégrité. Le bloc a été altéré.</string>
+    <string name="log_block_signed">✅ Bloc au slot %1$s signé et envoyé avec succès.</string>
+    <string name="log_block_send_error">⚠️ Erreur lors de l’envoi du bloc : %1$d - %2$s</string>
+    <string name="log_block_post_exception">Exception lors de l’envoi du bloc (tentative %1$d) : %2$s</string>
+    <string name="log_retrying_block_post">Nouvelle tentative d’envoi du bloc (tentative %1$d)…</string>
+    <string name="log_max_retries_failed">Échec de l’envoi après %1$d tentatives. Abandon.</string>
+    <string name="log_desconexion_registrada">📴 Déconnexion enregistrée à %1$s</string>
+
+    <!-- Interface -->
+    <string name="app_logo">Logo de l\'application</string>
+    <string name="alert_icon">Icône d’alerte</string>
+    <string name="errorBiomMessage">Vous devez configurer un code PIN, un schéma, une empreinte ou Face ID pour utiliser cette application</string>
+    <string name="errorBiomDetail">Impossible de vérifier votre identité avec la biométrie. Veuillez réessayer ou vérifier vos paramètres.</string>
+    <string name="retryMessage">Réessayer</string>
+    <string name="openConf">Ouvrir les paramètres</string>
+    <string name="DisconnectMess">Déconnexion</string>
+    <string name="connection_established">Connexion établie</string>
+    <string name="NodeIP">Adresse IP du nœud</string>
+    <string name="PortMess">Port</string>
+    <string name="ConnectMess">Se connecter</string>
+    <string name="go_back">Retour</string>
+
+    <!-- Logs -->
+    <string name="no_logs_found">Aucun journal trouvé.</string>
+    <string name="log_icon">Icône de journal</string>
+    <string name="check_icon">Icône de validation</string>
+</resources>

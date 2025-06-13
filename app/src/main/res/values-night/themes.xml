@@ -1,7 +1,30 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base dark theme for the app -->
     <style name="Base.Theme.TeeChainv2" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Fondo principal oscuro -->
+        <item name="colorSurface">@color/charcoal_black</item>
+        <!-- Texto y elementos activos -->
+        <item name="colorOnSurface">@color/white</item>
+        <!-- Color principal para botones -->
+        <item name="colorPrimary">@color/android_green</item>
+        <!-- Color secundario para acentos -->
+        <item name="colorSecondary">@color/crystal_blue</item>
+        <!-- Colores para textos y íconos sobre botones -->
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorTertiary">@color/white</item>
+
+        <!-- Tonos de fondo -->
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/charcoal_black</item>
+        <item name="android:navigationBarColor" >@color/charcoal_black</item>
+
+        <!-- Fuentes -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/light_gray</item>
+
     </style>
+
+    <!-- Theme alias -->
+    <style name="Theme.TeeChainv2" parent="Base.Theme.TeeChainv2" />
 </resources>

@@ -1,0 +1,61 @@
+<resources>
+    <!-- Authentifizierung -->
+    <string name="login_phrase">Willkommen bei TeeChain, Authentifizierung erforderlich</string>
+    <string name="login_subphrase">Verwende Face ID, Fingerabdruck oder PIN</string>
+    <string name="loginSucces">Anmeldung erfolgreich</string>
+    <string name="loginFailed">Anmeldung fehlgeschlagen</string>
+    <string name="loginError">Fehler bei der Anmeldung</string>
+
+    <!-- IP/Port Validierung -->
+    <string name="empty_ip_port_error">IP-Adresse und Port dürfen nicht leer sein</string>
+    <string name="invalid_ip_format">Ungültiges IP-Format</string>
+    <string name="invalid_port">Ungültige Portnummer</string>
+
+    <!-- Verbindungs- und Validierungslogs -->
+    <string name="log_checking_connection">🔍 Verbindung zum Node wird überprüft…</string>
+    <string name="log_connection_success">Erfolgreich verbunden mit %1$s:%2$s</string>
+    <string name="connection_failed">❌ Verbindung zum Node fehlgeschlagen. Bitte IP und Port überprüfen.</string>
+    <string name="connection_success_status">Verbunden mit Node: %1$s:%2$s</string>
+
+    <!-- Schlüsselgenerierung -->
+    <string name="bls_key_created">🔐 BLS-Schlüssel generiert und gespeichert.</string>
+
+    <!-- Verbindung und Blocksignierung -->
+    <string name="log_conexion_registrada">📡 Verbindung registriert zu %1$s:%2$s um %3$s</string>
+    <string name="log_connection_attempt">🔌 Verbindungsversuch zu %1$s:%2$s</string>
+    <string name="log_reconnection_delay">🔁 Temporärer Fehler. Neuer Versuch in %1$d Sekunden…</string>
+    <string name="log_thread_interrupted">🛑 Thread unterbrochen, Handler wird gestoppt.</string>
+    <string name="log_temporary_network_exception">Temporärer Netzwerkfehler: %1$s</string>
+    <string name="log_attempting_reconnect">Temporärer Fehler. Versuche erneut zu verbinden…</string>
+    <string name="log_exception">❌ Ausnahme: %1$s</string>
+    <string name="log_no_private_key">❌ Privater Schlüssel konnte nicht geladen werden.</string>
+    <string name="log_firmando_bloque">✍️ Signiere Block im Slot %1$s…</string>
+    <string name="log_firma_bloque_fallida">❌ Fehler beim Signieren des Blocks im Slot %1$s: %2$s</string>
+    <string name="log_signed_block_skipped">⚠️ Gültigkeitsdauer des Blocks abgelaufen. Überspringe Übertragung.</string>
+    <string name="log_integrity_failed">❌ Integritätsprüfung fehlgeschlagen. Block wurde manipuliert.</string>
+    <string name="log_block_signed">✅ Block im Slot %1$s erfolgreich signiert und gesendet.</string>
+    <string name="log_block_send_error">⚠️ Fehler beim Senden des Blocks: %1$d - %2$s</string>
+    <string name="log_block_post_exception">Ausnahme beim Blockversand (Versuch %1$d): %2$s</string>
+    <string name="log_retrying_block_post">Blockübertragung wird wiederholt (Versuch %1$d)…</string>
+    <string name="log_max_retries_failed">Block konnte nach %1$d Versuchen nicht gesendet werden. Vorgang abgebrochen.</string>
+    <string name="log_desconexion_registrada">📴 Trennung registriert um %1$s</string>
+
+    <!-- Layout -->
+    <string name="app_logo">App-Logo</string>
+    <string name="alert_icon">Warnsymbol</string>
+    <string name="errorBiomMessage">Du musst PIN, Muster, Fingerabdruck oder Face ID einrichten, um diese App zu nutzen</string>
+    <string name="errorBiomDetail">Identität konnte nicht per Biometrie überprüft werden. Bitte erneut versuchen oder Einstellungen prüfen.</string>
+    <string name="retryMessage">Erneut versuchen</string>
+    <string name="openConf">Einstellungen öffnen</string>
+    <string name="DisconnectMess">Verbindung trennen</string>
+    <string name="connection_established">Verbindung hergestellt</string>
+    <string name="NodeIP">Node-IP</string>
+    <string name="PortMess">Port</string>
+    <string name="ConnectMess">Verbinden</string>
+    <string name="go_back">Zurück</string>
+
+    <!-- Logs -->
+    <string name="no_logs_found">Keine Protokolle gefunden.</string>
+    <string name="log_icon">Protokollsymbol</string>
+    <string name="check_icon">Bestätigungssymbol</string>
+</resources>
