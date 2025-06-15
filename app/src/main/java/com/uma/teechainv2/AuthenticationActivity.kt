@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
+import com.uma.teechainv2.util.AppLogger
 import java.util.concurrent.Executor
 
 /**
@@ -77,6 +78,7 @@ class AuthenticationActivity : AppCompatActivity() {
             override fun onAuthenticationFailed() {
                 super.onAuthenticationFailed()
                 Toast.makeText(this@AuthenticationActivity, getString(R.string.loginFailed), Toast.LENGTH_SHORT).show()
+                AppLogger.log(this@AuthenticationActivity, getString(R.string.loginFailed))
             }
 
             // Si ocurre un error (cancelación, hardware, etc.), notifica y cierra
