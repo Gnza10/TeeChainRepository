@@ -45,7 +45,7 @@ object ConsensusBlockHandler {
         logBoth(context, context.getString(R.string.log_conexion_registrada, ip, port, timestamp), logCallback)
 
         val blockUrl = "http://$ip:$port/eth/v2/beacon/blocks/head"
-        val postUrl = "http://$ip:$port/eth/v1/beacon/blocks"
+        val postUrl = "http://$ip:$port/eth/v2/beacon/blocks"
 
         executor = Executors.newSingleThreadExecutor()
         executor!!.execute {
@@ -208,8 +208,19 @@ object ConsensusBlockHandler {
             return
         }
 
+        val signedBlockOnly = JSONObject().apply {
+            put("message", signedBlockJson.getJSONObject("message"))
+            put("signature", signedBlockJson.getString("signature"))
+        }
+
+        val publishPayload = JSONObject().apply {
+            put("signed_block", signedBlockOnly)
+            put("kzg_proofs", org.json.JSONArray())
+            put("blobs", org.json.JSONArray())
+        }
+
         val mediaType = "application/json".toMediaType()
-        val requestBody = signedBlockJson.toString().toRequestBody(mediaType)
+        val requestBody = publishPayload.toString().toRequestBody(mediaType)
 
         val request = Request.Builder()
             .url(postUrl)
