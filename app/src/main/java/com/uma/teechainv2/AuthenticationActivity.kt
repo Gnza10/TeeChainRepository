@@ -9,6 +9,7 @@ import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import com.uma.teechainv2.util.AppLogger
+import com.uma.teechainv2.util.ExperimentDataLogger
 import java.util.concurrent.Executor
 
 /**
@@ -22,6 +23,7 @@ class AuthenticationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        ExperimentDataLogger.archivePreviousRun(this)
         setContentView(R.layout.activity_authentication)
 
         // Inicializa el executor principal

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ProcessLifecycleOwner
+import com.uma.teechainv2.util.ExperimentDataLogger
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -49,6 +50,8 @@ class ConnectionActivity : AppCompatActivity() {
             appendLogBlocks(getString(R.string.bls_key_created))
         }
 
+        ExperimentDataLogger.startSession(this, ip!!, port!!)
+
         ConsensusBlockHandler.start(
             context = this,
             ip = ip!!,
@@ -58,6 +61,7 @@ class ConnectionActivity : AppCompatActivity() {
 
         buttonDisconnect.setOnClickListener {
             ConsensusBlockHandler.stop()
+            ExperimentDataLogger.finishSession(this)
             appendLogBlocks(getString(R.string.log_desconexion_registrada, getCurrentTime()))
             finish()
         }
